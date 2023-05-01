@@ -1,0 +1,14 @@
+## include most of the existing syntax definitions:
+include "/usr/share/nano/*.nanorc"
+include "~/.config/nano/*.nanorc"
+
+## trivial configurations:
+set autoindent
+# set softwrap
+set tabsize 4
+# set linenumbers
+# set mouse
+
+## alternate key bindings
+bind ^Z undo	main
+bind ^C copy	main

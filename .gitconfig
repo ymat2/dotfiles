@@ -1,0 +1,9 @@
+[user]
+	name = ymat2
+	email = yuki.matsuda.r7@dc.tohoku.ac.jp
+
+[push]
+	default = simple
+
+[url "git@github.com:"]
+	pushinsteadof = https://github.com/
