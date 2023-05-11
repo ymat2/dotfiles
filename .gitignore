@@ -1,0 +1,16 @@
+### all ignore ###
+/*
+/.**
+
+### but cache following files ###
+!/.gitignore
+!/.bashrc
+!/.bash_profile
+!/.bash_logout
+!/.zshrc
+!/.profile
+!/.vimrc
+!/.gitconfig
+!/.config/
+!/.config/**
+!/install.py
