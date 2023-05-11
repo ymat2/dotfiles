@@ -14,3 +14,4 @@
 !/.config/
 !/.config/**
 !/install.py
+!/.zprofile
