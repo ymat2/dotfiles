@@ -10,20 +10,25 @@
 
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
-    # include .bashrc if it exists
-    if [ -f "$HOME/.bashrc" ]; then
-	. "$HOME/.bashrc"
-    fi
+	if [ -f "$HOME/.bashrc" ]; then
+		. "$HOME/.bashrc"
+  fi
+fi
+
+# if running zsh
+if [ -n "$ZSH_VERSION" ]; then
+  if [ -f "$HOME/.zshrc" ]; then
+    . "$HOME/.zshrc"
+  fi
 fi
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
-    export PATH="$HOME/bin:$PATH"
+  export PATH="$HOME/bin:$PATH"
 fi
 
-# set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/.local/bin" ] ; then
-    export PATH="$HOME/.local/bin:$PATH"
+  export PATH="$HOME/.local/bin:$PATH"
 fi
 
 # set PATH so it includes linuxbrew if it exists
