@@ -1,0 +1,12 @@
+{
+    "workbench.colorTheme": "Default Dark Modern",
+    "workbench.startupEditor": "none",
+    "editor.minimap.enabled": false,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.codeLens": false,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "security.workspace.trust.untrustedFiles": "open",
+}
