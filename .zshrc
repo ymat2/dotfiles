@@ -13,7 +13,7 @@ alias la='ls -aGF'
 alias rmi='rm -i'
 alias gs='git status'
 alias gadd='git add'
-alias gcom='git commit -m'
+alias gcom='git commit'
 alias gpsh='git push'
 
 ## source locals settings

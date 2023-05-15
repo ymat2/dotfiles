@@ -94,7 +94,7 @@ alias l='ls -CF'
 alias rmi='rm -i'
 alias gs='git status'
 alias gadd='git add'
-alias gcom='git commit -m'
+alias gcom='git commit'
 alias gpsh='git push'
 
 # Add an "alert" alias for long running commands.  Use like so:
