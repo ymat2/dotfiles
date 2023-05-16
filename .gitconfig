@@ -2,6 +2,9 @@
 	name = ymat2
 	email = yuki.matsuda.r7@dc.tohoku.ac.jp
 
+[core]
+	editor = nano
+
 [init]
 	defaultBranch = main
 
