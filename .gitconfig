@@ -2,8 +2,14 @@
 	name = ymat2
 	email = yuki.matsuda.r7@dc.tohoku.ac.jp
 
+[init]
+	defaultBranch = main
+
 [push]
 	default = simple
 
 [url "git@github.com:"]
 	pushinsteadof = https://github.com/
+
+[commit]
+	template = ~/.config/git/commit_template
