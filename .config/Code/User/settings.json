@@ -9,5 +9,8 @@
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
     "security.workspace.trust.untrustedFiles": "open",
-    "remote.WSL.useShellEnvironment": true
+    "remote.WSL.useShellEnvironment": true,
+    "r.sessionWatcher": true,
+    "r.rmarkdown.enableCodeLens": false,
+    "git.openRepositoryInParentFolders": "never"
 }
