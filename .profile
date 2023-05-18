@@ -8,21 +8,26 @@
 # for ssh logins, install and configure the libpam-umask package.
 #umask 022
 
-# set PATH so it includes user's private bin if it exists
+# Source global definitions
+[ -f /etc/profile ] && . /etc/profile
+
+# set PATH so it includes user's bin if it exists
 if [ -d "$HOME/bin" ] ; then
-  export PATH="$HOME/bin:$PATH"
+  PATH="$HOME/bin:$PATH"
 fi
 
 if [ -d "$HOME/.local/bin" ] ; then
-  export PATH="$HOME/.local/bin:$PATH"
+  PATH="$HOME/.local/bin:$PATH"
 fi
 
 # set PATH so it includes linuxbrew if it exists
 if [ -d "/home/linuxbrew/.linuxbrew" ]; then
 	if [ -d "/home/linuxbrew/.linuxbrew/bin" ]; then
-		export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+		PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 	fi
 	if [ -d "/home/linuxbrew/.linuxbrew/sbin" ]; then
-		export PATH="/home/linuxbrew/.linuxbrew/sbin:$PATH"
+		PATH="/home/linuxbrew/.linuxbrew/sbin:$PATH"
 	fi
 fi
+
+export PATH

@@ -8,6 +8,10 @@ case $- in
       *) return;;
 esac
 
+### Source global definitions
+[ -f /etc/bashrc ] && . /etc/bashrc
+
+
 # don't put duplicate lines or lines starting with space in the history.
 HISTCONTROL=ignoreboth
 
