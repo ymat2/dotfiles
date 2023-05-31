@@ -5,12 +5,16 @@
     "editor.tabSize": 2,
     "editor.autoIndent": "advanced",
     "editor.codeLens": false,
+    "files.autoSave": "off",
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
+    "terminal.integrated.cwd": "${workspaceFolder}",
     "security.workspace.trust.untrustedFiles": "open",
     "remote.WSL.useShellEnvironment": true,
     "r.sessionWatcher": true,
     "r.rmarkdown.enableCodeLens": false,
-    "git.openRepositoryInParentFolders": "never"
+    "quarto.render.renderOnSave": false,
+    "git.openRepositoryInParentFolders": "never",
+    "explorer.confirmDragAndDrop": false
 }

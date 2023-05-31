@@ -1,5 +1,4 @@
-PS1='%1~ $ '
-cd ~/Desktop
+PS1='%n@%m %1~ $'
 
 ## setting history file and its size in zsh
 HISTFILE=${HOME}/.zsh_history
@@ -16,5 +15,6 @@ alias gadd='git add'
 alias gcom='git commit'
 alias gpsh='git push'
 
-## source locals settings
+## source other settings
+[ -f ~/.profile ] && . ~/.profile
 [ -f ~/.zsh_local ] && . ~/.zsh_local
