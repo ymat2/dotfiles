@@ -1,4 +1,4 @@
-PS1='%n@%m %1~ $'
+PS1='%n@%m:%1~$'
 
 ## setting history file and its size in zsh
 HISTFILE=${HOME}/.zsh_history
