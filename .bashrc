@@ -60,9 +60,9 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='\u@\h:\w\[\033[00m\]\$'
+    PS1='\u@\h:\W\[\033[00m\]\$ '
 else
-    PS1='\u@\h:\w\$'
+    PS1='\u@\h:\W\$ '
 fi
 unset color_prompt force_color_prompt
 
@@ -70,7 +70,7 @@ unset color_prompt force_color_prompt
 case "$TERM" in
 xterm*|rxvt*)
 	#PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
-    PS1="\[\e]0;\w\a\]$PS1"
+    PS1="\[\e]0;\W\a\]$PS1"
     ;;
 *)
     ;;
@@ -92,11 +92,12 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more aliases
-alias ll='ls -alF'
+alias ll='ls -ahlF'
 alias la='ls -A'
 alias l='ls -CF'
 alias rmi='rm -i'
 alias gs='git status'
+alias glog="git log --all --oneline --graph"
 alias gadd='git add'
 alias gcom='git commit'
 alias gpsh='git push'
