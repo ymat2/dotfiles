@@ -17,5 +17,5 @@ alias gcom='git commit'
 alias gpsh='git push'
 
 ## source other settings
-[ -f ~/.profile ] && . ~/.profile
 [ -f ~/.zsh_local ] && . ~/.zsh_local
+[ -f ~/.profile ] && . ~/.profile

@@ -10,15 +10,11 @@ if [ -d $HOME/.local/bin ]; then
   PATH=$HOME/.local/bin:$PATH
 fi
 
-# set PATH so it includes linuxbrew if it exists
-if [ -d /home/linuxbrew/.linuxbrew ]; then
-	if [ -d /home/linuxbrew/.linuxbrew/bin ]; then
-		PATH=/home/linuxbrew/.linuxbrew/bin:$PATH
-	fi
-	if [ -d /home/linuxbrew/.linuxbrew/sbin ]; then
-		PATH=/home/linuxbrew/.linuxbrew/sbin:$PATH
-	fi
-fi
+# set PATH for homebrew
+for prefix in /usr/local /usr /home/linuxbrew/.linuxbrew $HOME/.homebrew; do
+	[ -e $prefix/bin/brew ] && PATH=$prefix/bin:$PATH
+	[ -e $prefix/sbin/brew ] && PATH=$prefix/sbin:$PATH
+done
 
 # settings for pyenv, goenv, rbenv, nodebrew
 if [ -d $HOME/.pyenv ]; then
