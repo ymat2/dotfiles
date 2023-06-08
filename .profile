@@ -23,18 +23,23 @@ fi
 # settings for pyenv, goenv, rbenv, nodebrew
 if [ -d $HOME/.pyenv ]; then
 	export PYENV_ROOT=$HOME/.pyenv
-	command -v pyenv >/dev/null || export PATH=$PYENV_ROOT/bin:$PATH
+	export PATH=$PYENV_ROOT/bin:$PATH
 	eval "$(pyenv init -)"
 fi
 
 if [ -d $HOME/.goenv ]; then
 	export GOENV_ROOT=$HOME/.goenv
-	command -v goenv >/dev/null || export PATH=$GOENV_ROOT/bin:$PATH
+	export PATH=$GOENV_ROOT/bin:$PATH
 	eval "$(goenv init -)"
 	PATH=$GOENV_ROOT/shims:$GOROOT/bin:$PATH:$GOPATH/bin
 fi
 
-[ -d $HOME/.rbenv ] && eval "$(rbenv init -)"
+if [ -d $HOME/.rbenv ]; then
+	export RBENV_ROOT=$HOME/.rbenv
+	export PATH=$RBENV_ROOT/bin:$PATH
+	eval "$(rbenv init -)"
+fi
+
 [ -d $HOME/.nodebrew/current/bin ] && PATH=$HOME/.nodebrew/current/bin:$PATH
 
 export PATH
