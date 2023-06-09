@@ -11,11 +11,11 @@ if [ -d $HOME/.local/bin ]; then
 fi
 
 # set PATH for homebrew
-for prefix in /usr/local /usr /home/linuxbrew/.linuxbrew $HOME/.homebrew; do
+for prefix in /usr/local /home/linuxbrew/.linuxbrew $HOME/.homebrew; do
 	[ -d $prefix/bin ] && PATH=$prefix/bin:$PATH
 	[ -d $prefix/sbin ] && PATH=$prefix/sbin:$PATH
+	[ -e $prefix/bin/brew ] && eval "$($(brew --prefix)/bin/brew shellenv)"
 done
-eval "$($(brew --prefix)/bin/brew shellenv)"
 
 # settings for pyenv, goenv, rbenv, nodebrew
 if [ -d $HOME/.pyenv ]; then
