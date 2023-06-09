@@ -15,6 +15,7 @@ for prefix in /usr/local /usr /home/linuxbrew/.linuxbrew $HOME/.homebrew; do
 	[ -d $prefix/bin ] && PATH=$prefix/bin:$PATH
 	[ -d $prefix/sbin ] && PATH=$prefix/sbin:$PATH
 done
+eval "$($(brew --prefix)/bin/brew shellenv)"
 
 # settings for pyenv, goenv, rbenv, nodebrew
 if [ -d $HOME/.pyenv ]; then
