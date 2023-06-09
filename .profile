@@ -12,8 +12,8 @@ fi
 
 # set PATH for homebrew
 for prefix in /usr/local /usr /home/linuxbrew/.linuxbrew $HOME/.homebrew; do
-	[ -e $prefix/bin/brew ] && PATH=$prefix/bin:$PATH
-	[ -e $prefix/sbin/brew ] && PATH=$prefix/sbin:$PATH
+	[ -d $prefix/bin ] && PATH=$prefix/bin:$PATH
+	[ -d $prefix/sbin ] && PATH=$prefix/sbin:$PATH
 done
 
 # settings for pyenv, goenv, rbenv, nodebrew
