@@ -18,4 +18,4 @@ alias gpsh='git push'
 
 ## source other settings
 [ -f ~/.zsh_local ] && . ~/.zsh_local
-[ -f ~/.profile ] && . ~/.profile
+# [ -f ~/.profile ] && . ~/.profile
