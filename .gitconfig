@@ -3,7 +3,7 @@
 	email = yuki.matsuda.r7@dc.tohoku.ac.jp
 
 [core]
-	editor = nano
+	editor = vim
 
 [init]
 	defaultBranch = main
