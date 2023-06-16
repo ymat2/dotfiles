@@ -5,4 +5,6 @@ set noundofile
 set autoindent
 set viminfo=
 syntax enable
-colorscheme iceberg
+silent! colorscheme slate
+silent! colorscheme iceberg 
+
