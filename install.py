@@ -9,17 +9,20 @@ ignore = [".DS_Store", ".git", ".gitignore", "install.py"]
 home = os.path.expanduser("~")
 here = os.path.dirname(__file__)
 
-log_and_cmd = []
+cmd_ = []
+cmd_force_ = []
+log_ = []
+ignore_ = []
+
 
 def _ln_s(_target, _link):
-		if os.path.islink(_link):
-			log_and_cmd.append(f"### Warning: {_link}: Already linked")
-			log_and_cmd.append(f"#ln -s {_target} {_link}")
-		elif os.path.exists(_link):
-			log_and_cmd.append(f"### {_link}: File exists")
-			log_and_cmd.append(f"#ln -s {_target} {_link}")
-		else:
-			log_and_cmd.append(f"ln -s {_target} {_link}")
+	if os.path.islink(_link):
+		log_.append(f"### Warning: {_link}: Already linked")
+	elif os.path.exists(_link):
+		log_.append(f"### {_link}: File exists")
+		cmd_force_.append(f"#ln -sf {_target} {_link}")
+	else:
+		cmd_.append(f"ln -s {_target} {_link}")
 
 for root, dirs, files in os.walk(here):
 	for f in files:
@@ -30,11 +33,11 @@ for root, dirs, files in os.walk(here):
 		link_full_path = link_dir + "/" + f
 
 		if f in ignore or target_top_dir in ignore:
-			log_and_cmd.append(f"### Ignore: {f}")
+			ignore_.append(f"## {f}")
 
 		elif not os.path.exists(link_dir):
-			log_and_cmd.append(f"### {link_dir} does not exist.")
-			log_and_cmd.append(f"mkdir -p {link_dir}")
+			cmd_.append(f"### {link_dir} does not exist.")
+			cmd_.append(f"mkdir -p {link_dir}")
 			_ln_s(target_full_path, link_full_path)
 
 		else:
@@ -59,5 +62,16 @@ elif "microsoft" in os.uname().release:
 install_sh = os.path.join(home, "install.sh")
 with open(install_sh, "w") as f:
 	f.write("#!/bin/sh\n\n")
-	for line in log_and_cmd:
+
+	f.write("# To generate symlinks, execute following commands:\n")
+	for line in cmd_:
+		f.write(str(line)+"\n")
+	f.write("\n# Following files are already exists. Romove comment outs if needed:\n")
+	for line in cmd_force_:
+		f.write(str(line)+"\n")
+	f.write("\n# Following files are ignored:\n")
+	for line in ignore_:
+		f.write(str(line)+"\n")
+	f.write("\n##############################\n")
+	for line in log_:
 		f.write(str(line)+"\n")
