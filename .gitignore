@@ -9,9 +9,12 @@
 !/.bash_logout
 !/.zshrc
 !/.profile
+!/.Renviron
 !/.vimrc
 !/.gitconfig
 !/.config/
 !/.config/**
+!/.R/
+!/.R/**
 !/install.py
 !/.zprofile

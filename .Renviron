@@ -1,0 +1,2 @@
+R_USER=${HOME}
+R_LIBS_USER=${R_USER}/.R/library/%v

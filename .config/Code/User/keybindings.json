@@ -1,7 +1,23 @@
 [
   {
-    "key": "ctrl+enter",
-    "command": "workbench.action.terminal.runSelectedText",
+    "key": "alt+x",
+    "command": "extension.multiCommand.execute",
+    "args": {
+      "sequence": [
+        "workbench.action.terminal.runSelectedText",
+        "cursorDown",
+        "cursorLineStart"
+      ]
+    }
+  },
+  {
+    "key": "ctrl+;",
+    "command": "workbench.action.terminal.focus",
     "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+;",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
   }
 ]

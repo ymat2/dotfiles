@@ -16,5 +16,6 @@
     "r.rmarkdown.enableCodeLens": false,
     "quarto.render.renderOnSave": false,
     "git.openRepositoryInParentFolders": "never",
-    "explorer.confirmDragAndDrop": false
+    "explorer.confirmDragAndDrop": false,
+    "python.defaultInterpreterPath": "python3"
 }
