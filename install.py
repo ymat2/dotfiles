@@ -13,9 +13,11 @@ log_and_cmd = []
 
 def _ln_s(_target, _link):
 		if os.path.islink(_link):
-			log_and_cmd.append(f"# Warning: {_link}: Already linked")
+			log_and_cmd.append(f"### Warning: {_link}: Already linked")
+			log_and_cmd.append(f"#ln -s {_target} {_link}")
 		elif os.path.exists(_link):
-			log_and_cmd.append(f"# {_link}: File exists")
+			log_and_cmd.append(f"### {_link}: File exists")
+			log_and_cmd.append(f"#ln -s {_target} {_link}")
 		else:
 			log_and_cmd.append(f"ln -s {_target} {_link}")
 
@@ -28,10 +30,10 @@ for root, dirs, files in os.walk(here):
 		link_full_path = link_dir + "/" + f
 
 		if f in ignore or target_top_dir in ignore:
-			log_and_cmd.append(f"# Ignore: {target_full_path}")
+			log_and_cmd.append(f"### Ignore: {f}")
 
 		elif not os.path.exists(link_dir):
-			log_and_cmd.append(f"# {link_dir} does not exist.")
+			log_and_cmd.append(f"### {link_dir} does not exist.")
 			log_and_cmd.append(f"mkdir -p {link_dir}")
 			_ln_s(target_full_path, link_full_path)
 
