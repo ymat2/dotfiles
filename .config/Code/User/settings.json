@@ -17,5 +17,9 @@
     "quarto.render.renderOnSave": false,
     "git.openRepositoryInParentFolders": "never",
     "explorer.confirmDragAndDrop": false,
-    "python.defaultInterpreterPath": "python3"
+    "python.defaultInterpreterPath": "python3",
+    "terminal.integrated.commandsToSkipShell": [
+        "language-julia.interrupt"
+    ],
+    "julia.symbolCacheDownload": true
 }

@@ -1,6 +1,6 @@
 [
   {
-    "key": "alt+x",
+    "key": "ctrl+enter",
     "command": "extension.multiCommand.execute",
     "args": {
       "sequence": [

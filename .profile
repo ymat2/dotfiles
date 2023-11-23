@@ -26,9 +26,11 @@ fi
 
 if [ -d $HOME/.goenv ]; then
 	export GOENV_ROOT=$HOME/.goenv
-	export PATH=$GOENV_ROOT/bin:$PATH
-	eval "$(goenv init -)"
-	PATH=$GOENV_ROOT/shims:$GOROOT/bin:$PATH:$GOPATH/bin
+	goenv_versions=($(ls $GOENV_ROOT/versions | sort -V))
+	GOENV_LATEST=$GOENV_ROOT/versions/${goenv_versions[@]: -1}
+	unset goenv_versions
+	GOENV_SHIMS=$GOENV_ROOT/shims
+	export PATH=$GOENV_LATEST/bin:$GOENV_SHIMS:$GOROOT/bin:$PATH
 fi
 
 if [ -d $HOME/.rbenv ]; then
