@@ -30,7 +30,7 @@ if [ -d $HOME/.goenv ]; then
 	GOENV_LATEST=$GOENV_ROOT/versions/${goenv_versions[@]: -1}
 	unset goenv_versions
 	GOENV_SHIMS=$GOENV_ROOT/shims
-	export PATH=$GOENV_LATEST/bin:$GOENV_SHIMS:$GOROOT/bin:$PATH
+	export PATH=$GOENV_LATEST/bin:$GOENV_SHIMS:$PATH
 fi
 
 if [ -d $HOME/.rbenv ]; then
