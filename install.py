@@ -55,7 +55,7 @@ elif "microsoft" in os.uname().release:
 	for f in ["keybindings.json", "settings.json"]:
 		target_full_path = home+"/dotfiles/.config/Code/User/"+f
 		link_full_path = "/mnt/c/Users/kokep/AppData/Roaming/Code/User/"+f
-		_ln_s(target_full_path, link_full_path)
+		cmd_.append(f"cp {target_full_path} {link_full_path}")
 
 
 # Generate installer
