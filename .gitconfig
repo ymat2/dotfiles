@@ -19,3 +19,6 @@
 
 [commit]
 	template = ~/.config/git/commit_template
+
+[diff]
+	submodule = log
