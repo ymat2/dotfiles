@@ -60,7 +60,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='\u@\h:\W\[\033[00m\]\$ '
+    PS1='\[\e[0;32m\]\u@\h\[\e[m\]:\W\[\033[00m\]\$ '
 else
     PS1='\u@\h:\W\$ '
 fi
