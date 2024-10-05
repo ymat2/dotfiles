@@ -18,3 +18,5 @@
 !/.R/**
 !/install.py
 !/.zprofile
+!/.win/
+!/.win/**

@@ -5,7 +5,7 @@ Check the content of install.sh and execute it.
 
 import os
 
-ignore = [".DS_Store", ".git", ".gitignore", "install.py"]
+ignore = [".DS_Store", ".git", ".gitignore", ".win", "install.py"]
 home = os.path.expanduser("~")
 here = os.path.dirname(__file__)
 

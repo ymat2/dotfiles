@@ -1,0 +1,24 @@
+[user]
+    name = ymat2
+    email = ymat2@users.noreply.github.com
+
+[init]
+    defaultBranch = main
+
+[push]
+    default = simple
+
+[pull]
+    ff = only
+
+[url "git@github.com:"]
+    pushinsteadof = https://github.com/
+
+[diff]
+    submodule = log
+
+[commit]
+    template = C:\\Users\\kokep\\.config\\git\\commit_template
+
+[core]
+    editor = \"C:\\Users\\kokep\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code\" --wait
