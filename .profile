@@ -40,6 +40,11 @@ if [ -d ${HOME}/.local/go ]; then
   PATH=${HOME}/.local/go/bin:${PATH}
 fi
 
+if [ -d ${HOME}/go ]; then
+  PATH=${HOME}/go/bin:${PATH}
+fi
+
+
 if [ -d $HOME/.rbenv ]; then
   export RBENV_ROOT=$HOME/.rbenv
   export PATH=$RBENV_ROOT/bin:$PATH
