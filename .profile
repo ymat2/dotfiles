@@ -55,7 +55,7 @@ fi
 
 export PATH
 
-if [ -d "${UV_PYTHON_INSTALL_DIR:=$(uv python dir)}" ]; then
+if [ command -v uv > /dev/null 2>&1 && -d "${UV_PYTHON_INSTALL_DIR:=$(uv python dir)}" ]; then
   py_versions=($(ls "${UV_PYTHON_INSTALL_DIR}" | sort -V))
   export PY_LATEST=${UV_PYTHON_INSTALL_DIR}/${py_versions[@]: -1}
   PATH="${PY_LATEST}/bin:${PATH}"
