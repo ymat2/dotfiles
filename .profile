@@ -22,7 +22,7 @@ fi
 
 # settings for programming languages
 
-if [ ! "`echo $PATH | grep '$HOME/.cargo/bin'`" ]; then
+if [ -d ${HOME}/.cargo/bin ]; then
   PATH="$HOME/.cargo/bin:$PATH"
 fi
 
@@ -32,7 +32,7 @@ if [ -d $HOME/.pyenv ]; then
   eval "$(pyenv init -)"
 fi
 
-if [ ! "`echo $PATH | grep '$HOME/.juliaup/bin'`" ]; then
+if [ -d ${HOME}/.juliaup/bin ]; then
   PATH=${HOME}/.juliaup/bin:${PATH}
 fi
 
@@ -55,7 +55,7 @@ fi
 
 export PATH
 
-if [ command -v uv > /dev/null 2>&1 && -d "${UV_PYTHON_INSTALL_DIR:=$(uv python dir)}" ]; then
+if [ -d "${UV_PYTHON_INSTALL_DIR:=$(uv python dir 2>/dev/null)}" ]; then
   py_versions=($(ls "${UV_PYTHON_INSTALL_DIR}" | sort -V))
   export PY_LATEST=${UV_PYTHON_INSTALL_DIR}/${py_versions[@]: -1}
   PATH="${PY_LATEST}/bin:${PATH}"
