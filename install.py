@@ -44,20 +44,6 @@ for root, dirs, files in os.walk(here):
 			_ln_s(target_full_path, link_full_path)
 
 
-# Platform specific symlink
-if os.uname().sysname == 'Darwin':
-	for f in ["keybindings.json", "settings.json"]:
-		target_full_path = home+"/dotfiles/.config/Code/User/"+f
-		link_full_path = home+"/Library/Application\ Support/Code/User/"+f
-		_ln_s(target_full_path, link_full_path)
-
-elif "microsoft" in os.uname().release:
-	for f in ["keybindings.json", "settings.json"]:
-		target_full_path = home+"/dotfiles/.config/Code/User/"+f
-		link_full_path = "/mnt/c/Users/kokep/AppData/Roaming/Code/User/"+f
-		cmd_.append(f"cp {target_full_path} {link_full_path}")
-
-
 # Generate installer
 install_sh = os.path.join(home, "install.sh")
 with open(install_sh, "w") as f:
