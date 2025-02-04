@@ -6,5 +6,4 @@ set autoindent
 set viminfo=
 syntax enable
 silent! colorscheme slate
-silent! colorscheme iceberg 
-
+silent! colorscheme iceberg
