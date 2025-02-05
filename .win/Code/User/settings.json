@@ -3,6 +3,8 @@
     "workbench.startupEditor": "none",
     "editor.minimap.enabled": false,
     "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
     "editor.autoIndent": "advanced",
     "editor.codeLens": false,
     "editor.hover.enabled": true,
@@ -34,6 +36,23 @@
             "args": ["-l"]
         }
     },
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.profiles.windows": {
+        "Git Bash": {
+            "source": "Git Bash",
+            "args": ["-l"]
+        },
+        "PowerShell": {
+            "source": "PowerShell",
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+        }
+    },
     "security.workspace.trust.untrustedFiles": "open",
     "remote.WSL.useShellEnvironment": true,
     "r.sessionWatcher": true,
@@ -48,6 +67,16 @@
     ],
     "julia.symbolCacheDownload": true,
     "remote.SSH.remotePlatform": {
-        "ddbj2": "linux"
+      "ddbj2": "linux",
+      "ddbj": "linux",
+      "ddbj-vsc": "linux"
+    },
+    "[go]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4,
+    },
+    "[python]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4,
     }
 }
