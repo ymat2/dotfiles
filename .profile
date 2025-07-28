@@ -55,10 +55,3 @@ if [ -d ${HOME}/.rbenv ]; then
 fi
 
 export PATH
-
-if [ -d "${UV_PYTHON_INSTALL_DIR:=$(uv python dir 2>/dev/null)}" ]; then
-  py_versions=($(ls "${UV_PYTHON_INSTALL_DIR}" | sort -V))
-  export PY_LATEST=${UV_PYTHON_INSTALL_DIR}/${py_versions[@]: -1}
-  PATH=${PY_LATEST}/bin:${PATH}
-  unset py_versions PY_LATEST
-fi
