@@ -3,7 +3,7 @@
 	email = ymat2@users.noreply.github.com
 
 [core]
-	editor = \"C:\\Users\\kokep\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code\" --wait
+	editor = vim 
 
 [init]
 	defaultBranch = main
