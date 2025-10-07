@@ -9,6 +9,7 @@
     "editor.codeLens": false,
     "editor.hover.enabled": true,
     "editor.suggest.selectionMode": "never",
+    "editor.fontFamily": "Consolas, 'Noto Sans JP', 'Yu Gothic Medium', monospace",
     "files.autoSave": "off",
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
@@ -57,6 +58,10 @@
     "remote.WSL.useShellEnvironment": true,
     "r.sessionWatcher": true,
     "r.rmarkdown.enableCodeLens": false,
+    "r.rterm.option": ["--no-save", "--no-restore"],
+    "r.session.viewers.viewColumn": {
+      "plot": "Beside"
+    },
     "quarto.render.renderOnSave": false,
     "quarto.render.previewType": "none",
     "git.openRepositoryInParentFolders": "never",
@@ -67,7 +72,6 @@
     ],
     "julia.symbolCacheDownload": true,
     "remote.SSH.remotePlatform": {
-      "ddbj2": "linux",
       "ddbj": "linux",
       "ddbj-vsc": "linux"
     },
