@@ -7,9 +7,9 @@
     "editor.detectIndentation": false,
     "editor.autoIndent": "advanced",
     "editor.codeLens": false,
-    "editor.hover.enabled": true,
+    "editor.hover.enabled": "on",
     "editor.suggest.selectionMode": "never",
-    "editor.fontFamily": "Consolas, 'Noto Sans JP', 'Yu Gothic Medium', monospace",
+    "editor.fontFamily": "Consolas, 'Noto Sans JP', 'Yu Gothic Medium', monospace",  // 日本語のフォントは？
     "files.autoSave": "off",
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
@@ -66,14 +66,11 @@
     "quarto.render.previewType": "none",
     "git.openRepositoryInParentFolders": "never",
     "explorer.confirmDragAndDrop": false,
-    "python.defaultInterpreterPath": "python3",
-    "terminal.integrated.commandsToSkipShell": [
-        "language-julia.interrupt"
-    ],
-    "julia.symbolCacheDownload": true,
     "remote.SSH.remotePlatform": {
       "ddbj": "linux",
-      "ddbj-vsc": "linux"
+      "ddbj-a001": "linux",
+      "ddbj-a002": "linux",
+      "ddbj-a003": "linux"
     },
     "[go]": {
         "editor.insertSpaces": true,
