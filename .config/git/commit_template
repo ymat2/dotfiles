@@ -1,13 +1,8 @@
-# 🖊 :pen: Update contents
-# 📅 :calendar: date
-# ⬆️ :arrow_up: Update functions
-# 🏃 :running: In progress
-# ✅ :white_check_mark: Solve probrems
-# ✨ :sparkles: Introduce new features
-# 💥 :boom: Introduce breaking changes
-# 🔥 :fire: Remove code or files
-# 🐛 :bug: Fix bugs
-# 🔧 :wrench: Change configuration
-# 🚧 :construction: Under construction
-# 💄 :lipstick: Update styles
-# 🎨 :art: Improve structure/format of the code
+# docs: Update documents
+# feat: Introduce new feature
+# fix: Fix bugs or typo
+# refactor: Refactor codes or sentences
+# style: Update styles/structure/format
+# setting: Update settings
+# test: Add test
+# chore: build/config/misc.
