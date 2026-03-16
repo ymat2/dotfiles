@@ -1,0 +1,19 @@
+[
+  // column selection like VSCode
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-alt-shift-right": "editor::SelectRight",
+      "ctrl-alt-shift-left": "editor::SelectLeft",
+      "ctrl-alt-shift-up": "editor::AddSelectionAbove",
+      "ctrl-alt-shift-down": "editor::AddSelectionBelow",
+    },
+  },
+  // Evoke task to render single .Qmd file
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-shift-k": ["task::Spawn", { "task_name": "Quarto render" }],
+    },
+  },
+]
