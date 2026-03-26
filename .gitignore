@@ -12,6 +12,8 @@
 !/.gitconfig
 !/.config/
 !/.config/**
-!/install.py
+!/install.sh
+!/install.ps1
+!/README.md
 !/.win/
 !/.win/**
