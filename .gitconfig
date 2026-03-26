@@ -3,7 +3,8 @@
 	email = ymat2@users.noreply.github.com
 
 [core]
-	editor = vim 
+	editor = vim
+  autocrlf = false
 
 [init]
 	defaultBranch = main
