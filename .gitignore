@@ -8,6 +8,7 @@
 !/.bash_profile
 !/.zshrc
 !/.profile
+!/.Rprofile
 !/.vimrc
 !/.gitconfig
 !/.config/
