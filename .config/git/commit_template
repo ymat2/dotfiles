@@ -1,8 +1,9 @@
 # docs: Update documents
 # feat: Introduce new feature
+# test: Add feature prototypes
+# remove: Remove features
 # fix: Fix bugs or typo
 # refactor: Refactor codes or sentences
 # style: Update styles/structure/format
 # setting: Update settings
-# test: Add test
 # chore: build/config/misc.
