@@ -1,83 +1,83 @@
 {
-    "workbench.colorTheme": "Default Dark Modern",
-    "workbench.startupEditor": "none",
-    "editor.minimap.enabled": false,
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true,
-    "editor.detectIndentation": false,
-    "editor.autoIndent": "advanced",
-    "editor.codeLens": false,
-    "editor.hover.enabled": "on",
-    "editor.suggest.selectionMode": "never",
-    "editor.fontFamily": "Consolas, 'Noto Sans JP', 'Yu Gothic Medium', monospace",  // 日本語のフォントは？
-    "files.autoSave": "off",
-    "files.insertFinalNewline": true,
-    "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": true,
-    "terminal.integrated.cwd": "${workspaceFolder}",
-    "terminal.integrated.defaultProfile.linux": "bash",
-    "terminal.integrated.profiles.linux": {
-        "bash": {
-            "path": "bash",
-            "args": ["-l"]
-        },
-        "zsh": {
-            "path": "zsh",
-            "args": ["-l"]
-        }
+  "workbench.startupEditor": "none",
+  "workbench.colorTheme": "Dark 2026",
+  "chat.agent.enabled": false,
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.autoIndent": "advanced",
+  "editor.codeLens": false,
+  "editor.suggest.selectionMode": "never",
+  "editor.fontFamily": "Consolas, 'Noto Sans JP', 'Yu Gothic Medium', monospace",  // 日本語のフォントは？
+  "files.autoSave": "off",
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "terminal.integrated.cwd": "${workspaceFolder}",
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.integrated.profiles.linux": {
+    "bash": {
+      "path": "bash",
+      "args": ["-l"]
     },
-    "terminal.integrated.defaultProfile.osx": "zsh",
-    "terminal.integrated.profiles.osx": {
-        "bash": {
-            "path": "bash",
-            "args": ["-l"]
-        },
-        "zsh": {
-            "path": "zsh",
-            "args": ["-l"]
-        }
-    },
-    "terminal.integrated.defaultProfile.windows": "Git Bash",
-    "terminal.integrated.profiles.windows": {
-        "Git Bash": {
-            "source": "Git Bash",
-            "args": ["-l"]
-        },
-        "PowerShell": {
-            "source": "PowerShell",
-        },
-        "Command Prompt": {
-            "path": [
-                "${env:windir}\\Sysnative\\cmd.exe",
-                "${env:windir}\\System32\\cmd.exe"
-            ],
-            "args": [],
-        }
-    },
-    "security.workspace.trust.untrustedFiles": "open",
-    "remote.WSL.useShellEnvironment": true,
-    "r.sessionWatcher": true,
-    "r.rmarkdown.enableCodeLens": false,
-    "r.rterm.option": ["--no-save", "--no-restore"],
-    "r.session.viewers.viewColumn": {
-      "plot": "Beside"
-    },
-    "quarto.render.renderOnSave": false,
-    "quarto.render.previewType": "none",
-    "git.openRepositoryInParentFolders": "never",
-    "explorer.confirmDragAndDrop": false,
-    "remote.SSH.remotePlatform": {
-      "ddbj": "linux",
-      "ddbj-a001": "linux",
-      "ddbj-a002": "linux",
-      "ddbj-a003": "linux"
-    },
-    "[go]": {
-        "editor.insertSpaces": true,
-        "editor.tabSize": 4,
-    },
-    "[python]": {
-        "editor.insertSpaces": true,
-        "editor.tabSize": 4,
+    "zsh": {
+      "path": "zsh",
+      "args": ["-l"]
     }
+  },
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.profiles.osx": {
+    "bash": {
+      "path": "bash",
+      "args": ["-l"]
+    },
+    "zsh": {
+      "path": "zsh",
+      "args": ["-l"]
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.profiles.windows": {
+    "Git Bash": {
+      "source": "Git Bash",
+      "args": ["-l"]
+    },
+    "PowerShell": {
+      "source": "PowerShell",
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+    }
+  },
+  "terminal.integrated.initialHint": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "remote.WSL.useShellEnvironment": true,
+  "r.executablePath": "C:\\Program Files\\R\\R-4.6.0\\bin\\x64\\R.exe",
+  "r.consolePath": "C:\\Program Files\\R\\R-4.6.0\\bin\\x64\\Rterm.exe",
+  "r.consoleArgs": ["--no-save", "--no-restore"],
+  "r.sessionWatcher": true,
+  "r.rmarkdown.enableCodeLens": false,
+  "r.session.viewers.viewColumn": {
+    "plot": "Beside"
+  },
+  "quarto.render.renderOnSave": false,
+  "quarto.render.previewType": "none",
+  "quarto.usePipQuarto": false,
+  "git.openRepositoryInParentFolders": "never",
+  "explorer.confirmDragAndDrop": false,
+  "remote.SSH.remotePlatform": {
+    "ddbj": "linux",
+    "ddbj-a001": "linux",
+    "ddbj-a002": "linux",
+    "ddbj-a003": "linux"
+  },
+  "[python]": {
+    "editor.tabSize": 4,
+  },
 }
